@@ -10,9 +10,13 @@ flowchart TB
     %% 1 & 2 --- PL1((&))
     %% C(["Conclusion"])
     1("Prémisse")
-    1 -->|Par conséquent|C
+    1 --->|Par conséquent|C
+    2("Prémisse")
+    3("Prémisse")
+    2 & 3 --- PL1((&))
+    PL1 -->|Par conséquent|C
     C(["Conclusion"])
     end
     %% OBJECTIONS
-    %% O1["Objection"]
-    %% O1-.-|<i>objection !</i>|3
+    O1["Objection"]
+    O1-.-|<i>objection !</i>|3
