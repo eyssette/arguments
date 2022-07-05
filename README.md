@@ -36,10 +36,3 @@ flowchart TB
 ```
 
 On peut tester ce modèle dans l'outil en ligne [Mermaid - Live Editor](https://mermaid.live/edit#pako:eNp9VO1O2zAUfZWLqyJgBEErJJZqk0bhxya0ViraH8IP176kHo4dbEeMtXkgnoMX202atBnq1kpxcu6599wvecmElchi1u8vlVEhhmXCwgIzTFicsDn39HLcQOPZjFBIWO-LS4sMTQCHIix9cPYR4-C48Tl3hI_gQWkd9_C8-pewdSCCgaWw2rquQwknKFO84XPUjbV3cXFBcawJkVe_MT49-YjZCDLuUmUip9JFiIf5r8YzynkI6EwkLZ2yzUk4lXlr3pO81WrDSR0iMXoP2j6LBXchyq0y4drIZV1FY4f0TsmjT0mSsEn1uIejdyp7KsutC7yuv5v3OWYlCOWExg9p3YKmxueFCjiC1tjR28YqO8LjRhjWzLnm4nHUDVXLPmPdnLnVstxO7wd3is81epohDdmjsEZy9zKu3Otpd-ZRu-VU1l-EWqNrurROotsS6oQSVhJj08213CJkup5uJR9cgVUQLqUyKQGDU_ok9cdZzkULlSWU_X5iNpHg9jIxQL9-nwtxq4LGGOhw2IGv0AsXQ32oPChr1kZfzFPH8wW0q7iGpapWmFid4HB2kLCpe3vNlK_2_3BjmNrCQRGUVh4dUC8hLWgQ1N3gQVL3oDAIeesKMfSeChtG28gQRZ9XU-6Auu_fXp8KymQ16Nj3YUCcCKY3ZwcH-4db7fHBHS2ANUIXvqqK3Te23dlWSjukxmtr9znY6T_ciQ4ov-GO_OgL_iP3z9zRyE2Bk8tv1-Pbr5PvszU0OSOnyfznej7k08LRSbSyLQ57qyE7Zhm6jCtJN9myom0vMWhvscSUxCtyyQNeSxWsY_ED1x6PGS-Cnb0Y0WxmQ7pSnDYma1jlH-S4vKs).
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
-<script>
-window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
-</script>
