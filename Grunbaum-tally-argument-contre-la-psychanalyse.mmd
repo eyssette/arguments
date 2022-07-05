@@ -1,0 +1,40 @@
+%%{init: {"theme":"base","themeCSS": "#Argument rect{stroke:transparent; fill:#e5e5e5} #Argument span {color:transparent} .edgeLabel{color:#888; font-size:0.9em; margin-right:3px} .edge-pattern-dotted{stroke:crimson} .edge-pattern-solid{stroke:green} #flowchart-pointEnd{fill:green}  g[id*=\"O\"] *{stroke:crimson!important; font-size:0.95em} circle+g span{color:white; } circle{fill:green!important} g[id*=\"C\"] * {fill:black;color:white;font-weight:bold}","themeVariables":{"secondaryColor":"transparent","primaryColor":"white","primaryBorderColor":"black"},"flowchart":{"htmlLabels":true,"padding":20,"rankSpacing":10}} }%%
+flowchart TB
+    %%accTitle: Titre
+    %%accDescr: Description
+    subgraph Argument
+    direction TB
+    %% 1("Prémisse")
+    %% Pour utiliser les guillemets dans une prémisse : #quot;
+    %% 1 -->|Par conséquent|2
+    %% 1 & 2 --- PL1((&))
+    %% C(["Conclusion"])
+    1.1["(1.1) L'interprétation <br>psychanalytique des<br> symptômes a des effets <br>thérapeutiques sur les<br> troubles psychiques"]
+    1.2["(1.2) Si une cure a des effets<br> thérapeutiques,  cela signifie <br>qu'elle permet d'agir sur la cause<br> des troubles psychiques"]
+    1.1 & 1.2 --- PL1((&))
+    PL1-->|Par conséquent|2.1
+
+    2.1["(2.1) L'interprétation <br>psychanalytique des <br> symptômes permet d'agir<br> sur la  cause des<br> troubles psychiques"]
+    2.2["(2.2) Si une cure permet d'agir<br> sur la cause d'un trouble<br> psychique, cela signifie qu'elle<br> permet d'identifier correctement <br> la cause de ce trouble psychique"]
+    2.1 & 2.2 --- PL2((&))
+    PL2-->|Par conséquent|3.1
+
+    3.1["(3.1) L'interprétation <br>psychanalytique des <br>symptômes permet <br>d'identifier correctement la<br> cause des troubles psychiques"]
+    3.2["(3.2) Si une cure permet d'identifier<br>  correctement la cause d'un trouble<br>  psychique, cela signifie que la méthode<br>  qu'emploie cette pratique est légitime"]
+    3.1 & 3.2 --- PL3((&))
+    PL3-->|Par conséquent|C
+    
+    C(["L'interprétation psychanalytique des <br> symptômes des troubles psychiques <br> emploie une méthode légitime"])
+    end
+    %% OBJECTIONS
+    %% O1["Objection"]
+    %% O1-.-|objection !|3
+
+    O1("(O1) : <i>Critique de l'efficacité <br>de la psychanalyse :</i><br>A-t-elle vraiment des<br>effets thérapeutiques ?")
+    O1-.-|objection !|1.1
+    O2("(O2) : <i>Critique de l'origine des <br> effets de la psychanalyse :</i> <br> Ne sont-ils pas plutôt une <br> forme de suggestion ?")
+    O2-...-|objection !|2.1
+    O3("(O3) : <i>Critique du modèle étiologique <br> proposé par la psychanalyse :</i><br> La psychanalyse identifie-t-elle <br>correctement les causes <br> des troubles psychiques")
+    O3-.-|objection !|3.1
+    O4("(O4) : <i>Critique méthodologique <br>de la psychanalyse :</i> <br> La méthode rétrospective de <br>l'interprétation constitue-t-elle une<br> méthode scientifique rigoureuse")
+    O4-.-|objection !|C
