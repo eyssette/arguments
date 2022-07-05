@@ -1,2 +1,36 @@
-# arguments
-Un répertoire d'arguments philosophiques reconstruits
+# Arguments
+
+Un répertoire d'arguments philosophiques reconstruits.
+
+## Outil utilisé
+
+J'utilise [Mermaid](https://mermaid-js.github.io/mermaid/#/), un logiciel de création de schémas à partir d'un simple fichier texte.
+
+J'ai créé un modèle pour pouvoir reconstruire des arguments à l'aide de Mermaid.
+
+```mermaid
+%%{init: {"theme":"base","themeCSS": "#Argument rect{stroke:transparent; fill:#e5e5e5} #Argument span {color:transparent} .edgeLabel{color:#888; font-size:0.9em; margin-right:3px} .edge-pattern-dotted{stroke:crimson} .edge-pattern-solid{stroke:green} #flowchart-pointEnd{fill:green}  g[id*=\"O\"] *{stroke:crimson!important; font-size:0.95em} circle+g span{color:white; } circle{fill:green!important} g[id*=\"C\"] * {fill:black;color:white;font-weight:bold}","themeVariables":{"secondaryColor":"transparent","primaryColor":"white","primaryBorderColor":"black"},"flowchart":{"htmlLabels":true,"padding":20,"rankSpacing":20}} }%%
+flowchart TB
+    %%accTitle: Titre
+    %%accDescr: Description
+    subgraph Argument
+    direction TB
+    %% 1("Prémisse")
+    %% Pour utiliser les guillemets dans une prémisse : #quot;
+    %% 1 -->|Par conséquent|2
+    %% 1 & 2 --- PL1((&))
+    %% C(["Conclusion"])
+    1("Prémisse")
+    1 -->|Par conséquent|C
+    
+    
+    2("Prémisse")
+    3("Prémisse")
+    2 & 3 --- PL1((&))
+    PL1 -->|Par conséquent|C
+    C(["Conclusion"])
+    end
+    %% OBJECTIONS
+    O1["Objection"]
+    O1-.-|objection !|1
+```
