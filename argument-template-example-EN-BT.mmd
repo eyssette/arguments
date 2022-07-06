@@ -1,0 +1,22 @@
+%%{init: {"theme":"base","themeCSS": "#Argument rect{stroke:transparent; fill:#e5e5e5} #Argument span {color:transparent} .edgeLabel{color:#888; font-size:0.9em; margin-right:3px} .edgeLabel i{color:crimson} .edge-pattern-dotted{stroke:crimson} .edge-pattern-solid{stroke:green} #flowchart-pointEnd{fill:green}  g[id*=\"O\"] *{stroke:crimson!important; font-size:0.95em} circle+g span{color:white; } circle{fill:green!important} g[id*=\"C\"] * {fill:black;color:white;font-weight:bold}","themeVariables":{"secondaryColor":"transparent","primaryColor":"white","primaryBorderColor":"black"},"flowchart":{"htmlLabels":true,"padding":20,"rankSpacing":20}} }%%
+flowchart BT
+    %%accTitle: Title
+    %%accDescr: Description
+    subgraph Argument
+    direction BT
+    %% 1("Premise")
+    %% Quotation marks : use #quot;
+    %% 1 -->|supports|2
+    %% 1 & 2 --- PL1((&))
+    %% C(["Conclusion"])
+    1("Premise")
+    1 --->|supports|C
+    2("Premise")
+    3("Premise")
+    2 & 3 --- PL1((&))
+    PL1 -->|supports|C
+    C(["Conclusion"])
+    end
+    %% OBJECTIONS
+    O1["Objection"]
+    O1-.-|<i>Contra</i>|3
