@@ -23,27 +23,27 @@ flowchart TB
     PL1.2 --- 3
 
 
-    4["(4) Si un être a droit à la vie, alors <br>il est moralement inacceptable<br> d'interrompre la vie de cet être"]
+    4["(4) Si un être a droit à la vie, alors <br>tout acte qui a pour conséquence <br> d'interrompre la vie de cet être<br> est moralement inacceptable"]
 
     3 & 4 --- PL2((&))
     PL2 --- 5
 
-    5["(5) Il est moralement inacceptable <br> d'interrompre la vie d'un <br> embryon ou d'un fœtus"]
+    5["(5) Tout acte qui a pour conséquence <br> d'interrompre la vie d'un embryon ou <br>d'un fœtus est moralement inacceptable"]
 
-    6["(6) Avorter a pour conséquence <br>d'interrompre la vie d'un<br> embryon ou d'un fœtus "]
+    6["(6) L'avortement a pour conséquence <br>d'interrompre la vie d'un<br> embryon ou d'un fœtus "]
 
     5 & 6 --- PL3((&))
     V2 === PL3
     PL3 --- 7
     
-    7["(7) Il est moralement <br>inacceptable <br> d'avorter"]
+    7["(7) L'avortement est <br>moralement inacceptable"]
 
     8["(8) Si un acte est moralement<br>inacceptable, alors il est<br> légitime de l'interdire légalement"]
 
     7 & 8 --- PL4((&))
     PL4 --- C
 
-    C(["Il est légitime<br>d'interdire légalement<br>l'évortement"])
+    C(["Il est légitime<br>d'interdire légalement<br>l'avortement"])
     end
     %% OBJECTIONS
     O1.1["<b>Objection 1.1 :</b> <br> Ni l'embryon, ni <br>le fœtus n'est<br> une personne"]
