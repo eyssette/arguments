@@ -53,7 +53,7 @@ flowchart TB
     O2["<b>Objection 2 :</b> <br> Un individu qui peut devenir <br>une personne n'a pas le même<br> statut moral qu'une personne"]
     O2-.-|<i>objection !</i>|2.2
 
-    O4["<b>Objection 3 :</b> <br>Ce n'est pas toujours vrai. <br> (<i>cf.</i> les expériences de pensée<br> de Judith Jarvis Thompson)"]
+    O4["<b>Objection 3 :</b> <br>Ce n'est pas toujours vrai. Il y a des<br>  situations analogues où le droit à la vie<br>  des femmes prévaut, et des situations<br> où le droit des femmes à disposer de <br>leur corps prévaut (<i>cf.</i> les expériences de <br>pensée de Judith Jarvis Thompson)"]
     O4-..-|<i>objection !</i>|4
 
     O6["<b>Objection 4 :</b> <br> L'avortement est l'expulsion de <br>l'embryon ou du fœtus hors<br> du corps d'une femme. Si un État<br> veut empêcher l'interruption de<br>  la vie d'un embryon ou d'un fœtus,<br> alors il ne doit pas imposer l'interdiction<br>  de l'avortement, mais faire en sorte que<br>  l'embryon ou le fœtus puisse vivre après expulsion."]
