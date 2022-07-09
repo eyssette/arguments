@@ -1,4 +1,4 @@
-%%{init: {"theme":"base","themeCSS": "#Argument rect{stroke:transparent; fill:#e5e5e5} #Argument span {color:transparent} .edgeLabel{color:#888; font-size:0.9em; margin-right:3px} .edgeLabel i{color:crimson} .edge-pattern-dotted{stroke:crimson} .edge-pattern-solid{stroke:green} #flowchart-pointEnd{fill:green}  g[id*=\"O\"] *{stroke:crimson!important; font-size:0.95em} circle+g span{color:white; } circle{fill:green!important} g[id*=\"C\"] * {fill:black;color:white;font-weight:bold}  g[id*=\"V\"] * {stroke:transparent; fill:transparent; color:transparent} .edge-thickness-thick{stroke:transparent}","themeVariables":{"secondaryColor":"transparent","primaryColor":"white","primaryBorderColor":"black"},"flowchart":{"htmlLabels":true, "padding":20, "rankSpacing":20, "nodeSpacing":20}} }%%
+%%{init: {"theme":"base","themeCSS": "#Argument rect{stroke:transparent; fill:#e5e5e5} #Argument span {color:transparent} .edgeLabel{color:#888; font-size:0.9em; margin-right:3px} .edgeLabel i{color:crimson} .edge-pattern-dotted{stroke:crimson} .edge-pattern-solid{stroke:green} #flowchart-pointEnd{fill:green}  g[id*=\"O\"] *{stroke:crimson!important; font-size:1em} circle+g span{color:white; } circle{fill:green!important} g[id*=\"C\"] * {fill:black;color:white;font-weight:bold}  g[id*=\"V\"] * {stroke:transparent; fill:transparent; color:transparent} .edge-thickness-thick{stroke:transparent}","themeVariables":{"secondaryColor":"transparent","primaryColor":"white","primaryBorderColor":"black"},"flowchart":{"htmlLabels":true, "padding":20, "rankSpacing":20, "nodeSpacing":20}} }%%
 flowchart TB
     %%accTitle: Titre
     %%accDescr: Description
@@ -47,22 +47,22 @@ flowchart TB
     end
     %% OBJECTIONS
 
-    O1["<b>Objection 1 :</b> <br> L'embryon n'est pas une personne<br> et le fœtus n'est une personne qu'à<br> partir du moment T où il acquiert <br>les caractéristiques C, ce qui rend<br> légitime l'avortement jusqu'au moment T"]
+    O1["<b>Objection 1 :</b> <br> L'embryon n'est pas une personne et le fœtus<br> n'est une personne qu'à partir du moment T<br> où il acquiert les caractéristiques C, ce qui<br> rend légitime l'avortement avant le moment T"]
     O1-.-|<i>objection !</i>|1
 
     O2["<b>Objection 2 :</b> <br> Un individu qui peut devenir <br>une personne n'a pas le même<br> statut moral qu'une personne"]
     O2-.-|<i>objection !</i>|2.2
 
-    O4["<b>Objection 3 :</b> <br>Ce n'est pas toujours vrai. Il y a des<br>  situations analogues où le droit à la vie<br>  des femmes prévaut, et des situations<br> où le droit des femmes à disposer de <br>leur corps prévaut (<i>cf.</i> les expériences de <br>pensée de Judith Jarvis Thompson)"]
-    O4-..-|<i>objection !</i>|4
+    O3["<b>Objection 3 :</b> <br>Ce n'est pas toujours vrai. Il y a des<br>  situations analogues où le droit à la vie<br>  des femmes prévaut, et des situations<br> où le droit des femmes à disposer de <br>leur corps prévaut (<i>cf.</i> les expériences <br>de pensée de Judith Jarvis Thompson)"]
+    O3-..-|<i>objection !</i>|4
 
-    O6["<b>Objection 4 :</b> <br> L'avortement est l'expulsion de <br>l'embryon ou du fœtus hors<br> du corps d'une femme. Si un État<br> veut empêcher l'interruption de<br>  la vie d'un embryon ou d'un fœtus,<br> alors il ne doit pas imposer l'interdiction<br>  de l'avortement, mais faire en sorte que<br>  l'embryon ou le fœtus puisse vivre après expulsion."]
-    O6-..-|<i>objection !</i>|6
+    O4["<b>Objection 4 :</b> <br> L'avortement est l'expulsion de <br>l'embryon ou du fœtus hors du corps <br>d'une femme. Avec le progrès des <br>techniques médicales,  l'avortement <br>pourrait ne pas avoir pour <br>conséquence l'interruption de<br> la vie de l'embyron ou du fœtus"]
+    O4-..-|<i>objection !</i>|6
 
-    O8.1["<b>Objection 5.1 :</b> <br>Objection 5.1 : L'interdiction légale<br> de l'avortement est inefficace et<br> met en danger les femmes qui iront<br> avorter de manière clandestine"]
-    O8.1-..-|<i>objection !</i>|8
+    O5.1["<b>Objection 5.1 :</b> <br>Objection 5.1 : L'interdiction légale<br> de l'avortement est inefficace et<br> met en danger les femmes qui iront<br> avorter de manière clandestine"]
+    O5.1-..-|<i>objection !</i>|8
 
-    O8.2["<b>Objection 5.2 :</b> <br>L'avortement est une question <br>qui relève de la morale et non de <br>la loi. On ne peut pas imposer <br>l'interdiction de l'avortement en raison <br>des conceptions morales personnelles <br>que l'on a du bien et du mal."]
-    O8.2-.-|<i>objection !</i>|8
+    O5.2["<b>Objection 5.2 :</b> <br>L'avortement est une question <br>qui relève de la morale et non de <br>la loi. On ne peut pas imposer <br>l'interdiction de l'avortement en raison <br>des conceptions morales personnelles <br>que l'on a du bien et du mal."]
+    O5.2-.-|<i>objection !</i>|8
 
     
