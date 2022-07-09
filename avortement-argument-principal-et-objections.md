@@ -46,25 +46,23 @@ flowchart TB
     C(["Il est légitime<br>d'interdire légalement<br>l'avortement"])
     end
     %% OBJECTIONS
-    O1.1["<b>Objection 1.1 :</b> <br> Ni l'embryon, ni <br>le fœtus n'est<br> une personne"]
-    O1.1-.-|<i>objection !</i>|1
 
-    O1.2["<b>Objection 1.2 :</b> <br> L'embryon n'est pas une personne<br> et le fœtus n'est une personne <br>qu'à partir du moment T où il acquiert <br>les caractéristiques C, ce qui permet<br> l'avortement jusqu'au moment T"]
-    O1.2-.-|<i>objection !</i>|1
+    O1["<b>Objection 1 :</b> <br> L'embryon n'est pas une personne<br> et le fœtus n'est une personne qu'à<br> partir du moment T où il acquiert <br>les caractéristiques C, ce qui rend<br> légitime l'avortement jusqu'au moment T"]
+    O1-.-|<i>objection !</i>|1
 
     O2["<b>Objection 2 :</b> <br> Un individu qui peut devenir <br>une personne n'a pas le même<br> statut moral qu'une personne"]
     O2-.-|<i>objection !</i>|2.2
 
-    O4["<b>Objection 3 :</b> <br>Ce n'est pas toujours vrai : dans le cas des <br> expériences de pensée de Judith Jarvis Thompson <br>"]
+    O4["<b>Objection 3 :</b> <br>Ce n'est pas toujours vrai. <br> (<i>cf.</i> les expériences de pensée<br> de Judith Jarvis Thompson)"]
     O4-..-|<i>objection !</i>|4
 
-    O6["<b>Objection 4 :</b> <br>"]
+    O6["<b>Objection 4 :</b> <br> L'avortement est l'expulsion de <br>l'embryon ou du fœtus hors<br> du corps d'une femme. Si un État<br> veut empêcher l'interruption de<br>  la vie d'un embryon ou d'un fœtus,<br> alors il ne doit pas imposer l'interdiction<br>  de l'avortement, mais faire en sorte que<br>  l'embryon ou le fœtus puisse vivre après expulsion."]
     O6-..-|<i>objection !</i>|6
 
-    O8.1["<b>Objection 5 :</b> <br>"]
+    O8.1["<b>Objection 5.1 :</b> <br>Objection 5.1 : L'interdiction légale<br> de l'avortement est inefficace et<br> met en danger les femmes qui iront<br> avorter de manière clandestine"]
     O8.1-..-|<i>objection !</i>|8
 
-    O8.2["<b>Objection 2 :</b> <br>"]
+    O8.2["<b>Objection 5.2 :</b> <br>L'avortement est une question <br>qui relève de la morale et non de <br>la loi. On ne peut pas imposer <br>l'interdiction de l'avortement en raison <br>des conceptions morales personnelles <br>que l'on a du bien et du mal."]
     O8.2-.-|<i>objection !</i>|8
 
     
