@@ -1,50 +1,126 @@
-%%{init: {"theme":"base","themeCSS": "#Argument rect{stroke:transparent; fill:#e5e5e5} #Argument span {color:transparent} .edgeLabel{color:#888; font-size:0.9em; margin-right:3px} .edgeLabel i{color:crimson} .edge-pattern-dotted{stroke:crimson} .edge-pattern-solid{stroke:green} #flowchart-pointEnd{fill:green}  g[id*=\"O\"] *{stroke:crimson!important; font-size:0.95em} circle+g span{color:white; } circle{fill:green!important} g[id*=\"C\"] * {fill:black;color:white;font-weight:bold}","themeVariables":{"secondaryColor":"transparent","primaryColor":"white","primaryBorderColor":"black"},"flowchart":{"htmlLabels":true,"padding":20,"rankSpacing":20}} }%%
+%%{init: {"theme":"base","themeCSS": "#Argument rect{stroke:transparent; fill:#e5e5e5} #Argument span {color:transparent} .edgeLabel{color:#888; font-size:0.9em; margin-right:3px} .edgeLabel i{color:crimson} .edge-pattern-dotted{stroke:crimson} .edge-pattern-solid{stroke:green} #flowchart-pointEnd{fill:green} g[id*=\"O\"] *{stroke:crimson!important; font-size:0.95em} circle+g span{color:white; } circle{fill:green!important} g[id*=\"C\"] * {fill:black;color:white;font-weight:bold}","themeVariables":{"secondaryColor":"transparent","primaryColor":"white","primaryBorderColor":"black"},"flowchart":{"htmlLabels":true,"padding":20,"rankSpacing":20}} }%%
 flowchart TB
-    subgraph Argument
-    direction TB
-    %% 1("Prémisse")
-    %% Pour utiliser les guillemets dans une prémisse : #quot;
-    %% 1 -->|Par conséquent|2
-    %% 1 & 2 --- PL1((&))
-    %% C(["Conclusion"])
+subgraph Argument
+direction TB
+%% 1("Prémisse")
+%% Pour utiliser les guillemets dans une prémisse : #quot;
+%% 1 -->|Par conséquent|2
+%% 1 & 2 --- PL1((&))
+%% C(["Conclusion"])
 
-    1("(1) L'existence du<br>monde est contingente :<br>le monde existe, mais il<br>aurait pu ne pas exister")
-    2("(2) Si l'existence de X est<br>contingente, il doit y avoir<br>une explication du fait<br>que X existe alors que X<br>aurait pu ne pas exister")
-    1 & 2 --- PL1((&))
-    PL1 -->|Par conséquent|3
-    3("(3) Il doit y avoir<br>une explication de<br>l'existence du monde")
+1("(1) L'existence du
+monde est contingente :
+le monde existe, mais il
+aurait pu ne pas exister")
+2("(2) Si l'existence de X est
+contingente, il doit y avoir
+une explication du fait
+que X existe alors que X
+aurait pu ne pas exister")
+1 & 2 --- PL1((&))
+PL1 -->|Par conséquent|3
+3("(3) Il doit y avoir
+une explication de
+l'existence du monde")
 
-    4("(4) S'il y a une explication de <br>l'existence du monde, on ne peut <br>pas trouver cette explication dans<br> le monde lui-même : l'explication<br> doit se trouver dans une réalité <br>qui  n'est pas dans le monde et <br>qui est différente du monde")
-    5("(5) S'il y a une explication de <br>l'existence du monde, elle ne peut<br> se trouver que dans une réalité<br> non-contingente, car sinon la<br> contingence de cette réalité conduirait,<br> d'après (2), à rechercher à nouveau<br> une explication de son existence, <br>ce qui nous mènerait à une régression<br> à l'infini dans l'explication")
-    4 & 5 --- PL2((&))
-    PL2 -->|Par conséquent|6
-    6("(6) S'il y a une explication <br> de l'existence du monde, <br> elle ne peut se trouver que<br> dans une réalité non-contingente<br> qui n'est pas dans le monde et<br> qui est différente du monde ")
-    
-    3 & 6 --- PL3((&))
-    PL3 -->|Par conséquent|7
-    7("(7) Il existe une réalité <br>non-contingente,  qui n'est pas<br> dans le monde, qui est différente<br> du monde, et dont l'existence<br> explique l'existence du monde")
-    8("(8) Cette réalité,<br>c'est Dieu")
+4("(4) S'il y a une explication de 
+l'existence du monde, on ne peut 
+pas trouver cette explication dans
+le monde lui-même : l'explication
+doit se trouver dans une réalité 
+qui n'est pas dans le monde et 
+qui est différente du monde")
+5("(5) S'il y a une explication de 
+l'existence du monde, elle ne peut
+se trouver que dans une réalité
+non-contingente, car sinon la
+contingence de cette réalité conduirait,
+d'après (2), à rechercher à nouveau
+une explication de son existence, 
+ce qui nous mènerait à une régression
+à l'infini dans l'explication")
+4 & 5 --- PL2((&))
+PL2 -->|Par conséquent|6
+6("(6) S'il y a une explication 
+de l'existence du monde, 
+elle ne peut se trouver que
+dans une réalité non-contingente
+qui n'est pas dans le monde et
+qui est différente du monde ")
 
-    7 & 8 --- PL4((&))
-    PL4 -->|Par conséquent|C
+3 & 6 --- PL3((&))
+PL3 -->|Par conséquent|7
+7("(7) Il existe une réalité 
+non-contingente, qui n'est pas
+dans le monde, qui est différente
+du monde, et dont l'existence
+explique l'existence du monde")
+8("(8) Cette réalité,
+c'est Dieu")
 
-    C(["Dieu existe"])
+7 & 8 --- PL4((&))
+PL4 -->|Par conséquent|C
 
-    end
+C(["Dieu existe"])
 
-    %% OBJECTIONS
+end
 
-    O1["On pourrait penser que l'existence <br>du monde n'est pas contingente,<br>soit parce que la contigence n'est<br> qu'une illusion de notre pensée ou<br>le résultat d'un sophisme (peut-on <br>attribuer la contingence au tout du<br>monde en raison de la contingence <br>de ses éléments ?), soit parce que<br>l'argument tout entier serait autoréfutant<br> (si l'existence du monde s'explique par <br>une réalité dont l'existence est nécessaire,<br> peut-elle vraiment être contingente ?) ;<br> mais ces objections semblent faibles"]
-    O1-.-|<i>objection !</i>|1
+%% OBJECTIONS
 
-    O2["Ce principe correspond à ce qu'on <br>appelle le principe de raison<br>suffisante (PRS), or le PRS se heurte à<br> deux objections majeures :<br>1/ Il n'y a pas de preuve de la vérité du PRS ;<br> 2/ Le PRS a pour domaine premier d'application<br> les phénomènes empiriques : peut-on<br> appliquer ce principe hors de ce domaine ?"]
-    O2-.-|<i>objection !</i>|2
+O1["On pourrait penser que l'existence 
+du monde n'est pas contingente,
+soit parce que la contigence n'est
+qu'une illusion de notre pensée ou
+le résultat d'un sophisme (peut-on 
+attribuer la contingence au tout du
+monde en raison de la contingence 
+de ses éléments ?), soit parce que
+l'argument tout entier serait autoréfutant
+(si l'existence du monde s'explique par 
+une réalité dont l'existence est nécessaire,
+peut-elle vraiment être contingente ?) ;
+mais ces objections semblent faibles"]
+O1-.-|<i>objection !</i>|1
 
-    O4["Quand on cherche à expliquer l'existence d'un<br>tout, on peut l'expliquer par l'existence de ses<br>éléments constitutifs, or le monde est justement<br>un tout, dont on peut expliquer l'existence en<br>expliquant l'existence de chaque réalité qui fait<br>partie du monde : il n'y aurait pas besoin de<br>chercher une explication supplémentaire"]
-    O4-.-|<i>objection !</i>|4
+O2["Ce principe correspond à ce qu'on 
+appelle le principe de raison
+suffisante (PRS), or le PRS se heurte à
+deux objections majeures :
+1/ Il n'y a pas de preuve de la vérité du PRS ;
+2/ Le PRS a pour domaine premier d'application
+les phénomènes empiriques : peut-on
+appliquer ce principe hors de ce domaine ?"]
+O2-.-|<i>objection !</i>|2
 
-    O5["Il y a ici trois problèmes majeurs :<br>1/ Le concept même d'une réalité non-contingente a-t-il du<br>sens ? On peut toujours concevoir la non-existence d'une<br>réalité, il semble donc que toute réalité est contingente<br>2/ A-t-on vraiment le droit de postuler l'existence d'une réalité<br>non-contingente simplement parce qu'on refuse la possibilité<br>d'une régression à l'infini dans l'explication ? Ne faut-il pas<br>plutôt accepter la possibilité d'une telle régression à l'infini ? ;<br>3/ Postuler l'existence d'une réalité non-contingente permet-il<br>vraiment d'expliquer l'existence du monde ? Une explication doit<br>nous donner une compréhension précise du processus qui conduit<br>à l'existence du fait qu'on explique : est-ce vraiment le cas ici ?"]
-    O5-.-|<i>objection !</i>|5
+O4["Quand on cherche à expliquer l'existence d'un
+tout, on peut l'expliquer par l'existence de ses
+éléments constitutifs, or le monde est justement
+un tout, dont on peut expliquer l'existence en
+expliquant l'existence de chaque réalité qui fait
+partie du monde : il n'y aurait pas besoin de
+chercher une explication supplémentaire"]
+O4-.-|<i>objection !</i>|4
 
-    O8["Cette identification est-elle<br> légitime ? L'argument ne prouve <br>au mieux que l'existence d'un <br> être nécessaire, et non l'existence<br> d'un être personnel, parfait, <br>tout-puissant, omniscient,<br>bienveillant, et libre <br>créateur du monde"]
-    O8-..-|<i>objection !</i>|8
+O5["Il y a ici trois problèmes majeurs :
+1/ Le concept même d'une réalité non-contingente a-t-il du
+sens ? On peut toujours concevoir la non-existence d'une
+réalité, il semble donc que toute réalité est contingente
+2/ A-t-on vraiment le droit de postuler l'existence d'une réalité
+non-contingente simplement parce qu'on refuse la possibilité
+d'une régression à l'infini dans l'explication ? Ne faut-il pas
+plutôt accepter la possibilité d'une telle régression à l'infini ? ;
+3/ Postuler l'existence d'une réalité non-contingente permet-il
+vraiment d'expliquer l'existence du monde ? Une explication doit
+nous donner une compréhension précise du processus qui conduit
+à l'existence du fait qu'on explique : est-ce vraiment le cas ici ?"]
+O5-.-|<i>objection !</i>|5
+
+O8["Cette identification est-elle
+légitime ? L'argument ne prouve 
+au mieux que l'existence d'un 
+être nécessaire, et non l'existence
+d'un être personnel, parfait, 
+tout-puissant, omniscient,
+bienveillant, et libre 
+créateur du monde"]
+O8-..-|<i>objection !</i>|8
