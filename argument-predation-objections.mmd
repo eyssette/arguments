@@ -1,0 +1,79 @@
+%%{init: {"theme":"base","themeCSS": "#Argument rect{stroke:transparent; fill:#e5e5e5} #Argument span {color:transparent} .edgeLabel{color:#888; font-size:0.9em; margin-right:3px} .edgeLabel i{color:crimson} .edge-pattern-dotted{stroke:crimson} .edge-pattern-solid{stroke:green} #flowchart-pointEnd{fill:green}  g[id*=\"O\"] *{stroke:crimson!important; font-size:0.95em} circle+g span{color:white; } circle{fill:green!important} g[id*=\"C\"] * {fill:black;color:white;font-weight:bold}","themeVariables":{"secondaryColor":"transparent","primaryColor":"white","primaryBorderColor":"black"},"flowchart":{"htmlLabels":true,"padding":20,"rankSpacing":20}} }%%
+flowchart TB
+%%accTitle: Titre
+%%accDescr: Description
+subgraph Argument
+direction TB
+%% 1("Prémisse")
+%% Pour utiliser les guillemets dans une prémisse : #quot;
+%% 1 -->|Par conséquent|2
+%% 1 & 2 --- PL1((&))
+%% C(["Conclusion"])
+1("Si l'antispécisme est
+vrai, alors la prédation
+est un mal")
+2("Si la prédation est un
+mal, alors nous avons le
+devoir d'abolir ou de
+réduire la prédation
+dans la nature")
+3("Si l'antispécisme est vrai,
+alors nous avons un devoir
+moral d'abolir ou de réduire
+la prédation dans la nature")
+4("Il est absurde de penser
+que nous avons un devoir
+moral d'abolir ou de réduire
+la prédation dans la nature")
+
+1 & 2 --- PL1((&))
+PL1-->|Par conséquent|3
+3 & 4 --- PL2((&))
+PL2--->|Par conséquent|C
+
+C(["L'antispécisme
+est faux"])
+end
+
+%% OBJECTIONS
+%% O1["Objection"]
+%% O1-.-|<i>objection !</i>|3
+
+O1["La prédation n'est pas un mal
+
+– Argument de
+l'épanouissement
+(Everett 2001)
+- Argument écocentriste
+(Callicott 1980)"]
+O1-.-|<i>objection !</i>|1
+
+O2a["Nous n'avons pas
+le devoir d'intervenir : 
+
+- Argument de
+l'agentivité morale
+(Tom Regan 2013)
+– Argument de la
+responsabilité causale
+(Claire Palmer 2010)"]
+O2a-.-|<i>objection !</i>|2
+
+O2b["D'autres devoirs sont
+plus importants :
+
+– Ne pas causer d'effets
+secondaires catastrophiques
+(Sapontzis 1987 ; Singer 2012)
+– Ne pas violer l'autonomie
+des animaux sauvages
+(Donaldson & Kymlicka 2016)
+– Respecter l'environnement
+(Delon & Purves 2018)"]
+O2b-.-|<i>objection !</i>|2
+
+O3["Il n'y a rien d'absurde dans
+l'idée que nous puissions
+avoir cette obligation
+(Sapontzis 1984)"]
+O3-.-|<i>objection !</i>|4
